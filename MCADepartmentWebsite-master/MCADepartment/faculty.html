@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Department Of MCA</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	body{
+    background:rgb(255, 244, 244);
+}
+.profile-card{
+            position:relative;
+            overflow: hidden;
+            margin-bottom:10px;
+            box-shadow:0px 2px 3px #222;
+            top:150px;
+        }
+        .profile-card:hover .profile-img img
+        {
+            transform: scale(1.2);
+        }
+        .profile-card .profile-img img{
+            width:100%;
+            height:auto;
+            transition: transform 1s;
+        }
+        .profile-card .profile-content::before{
+            content: "";
+            position:absolute;
+            top:0;
+            left:0;
+            width:50%;
+            height:40%;
+            border:3px solid #333;
+            border-right:3px solid transparent;
+            border-bottom:3px solid transparent;
+            transform: scale(1,1);
+            transition: all 0.50s linear;
+        }
+        .profile-card .profile-content::after{
+            content: "";
+            position:absolute;
+            bottom:0;
+            right:0;
+            width:50%;
+            height:40%;
+            border:3px solid #222;
+            border-left:3px solid transparent;
+            border-top:3px solid transparent;
+            transition: all 0.50s linear;
+            
+        }
+        .profile-card:hover .profile-content:before{
+            top:20px;
+            left:20px;
+        }
+        .profile-card:hover .profile-content:after{
+            bottom:20px;
+            right:20px;
+        }
+       
+        .profile-card .profile-content{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            padding:50% 4%;
+            text-align: center;
+           
+        }
+        .profile-card .profile-content:hover{
+            background-color: rgba(255, 43, 131, 0.5);
+        }
+        .profile-card .profile-content .title{
+            font-size:24px;
+            color:#333;
+            opacity:0;
+            letter-spacing:2px;
+            text-transform:uppercase;
+            transform: translateY(-100px);
+            transition:all 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+        }
+        .profile-card:hover .title{
+            opacity:1;
+            transform: translateY(0);
+        }
+        .profile-card:hover .title::after{
+            content:"";
+            display:block;
+            width:50%;
+            margin:10px auto;
+            border-bottom:2px solid #222;
+        }
+        .profile-card .profile-content .title > span{
+            display:block;
+            margin:5px 0;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+        .profile-card .profile-content .social-link{
+            margin:20px 0;
+            padding:0;
+            opacity:0;
+            transform: translateY(100px);
+            transition:all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.20s;
+        }
+        .profile-card:hover .social-link{
+            opacity:1;
+            transform: translateY(0);
+        }
+        .profile-card .profile-content .social-link li{
+            display: inline-block;
+            list-style: none;
+            margin:0 4px;
+        }
+        .profile-card .profile-content .social-link li a{
+            color:#333;
+            width:30px;
+            height:25px;
+            line-height:24px;
+            text-align: center;
+            border-radius:5px;
+            background-color: #fff;
+        }
+        
+</style>
+</head>
+<body>
+
+<h1 align="center" style="font-size:36px;">Department of Master of Computer Applications</h1>
+<hr>
+<h2 class="text-center"><i class="glyphicon glyphicon-user"></i> List of Faculty Members</h2>
+
+
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			
+			<div class="col-sm-6 col-md-2">
+   				<div class="list-group">
+   					<a href="index.html" class="list-group-item"><i class="glyphicon glyphicon-home"></i> Home</a>
+					<a href="vision.html" class="list-group-item"><i class="glyphicon glyphicon-eye-open"></i> Vision</a>
+					<a href="lateral.html" class="list-group-item"><i class="glyphicon glyphicon-alert"></i> Lateral entry</a>
+    				<a href="infrastructure.html" class="list-group-item"><i class="glyphicon glyphicon-th-large"></i> Infrastructure</a>
+    				<a href="semester.html" class="list-group-item"><i class="glyphicon glyphicon-info-sign"></i> Semester Information</a>
+					<a href="eligibility.html" class="list-group-item"><i class="glyphicon glyphicon-education"></i> Eligibility Criteria</a>
+    				<a href="#" class="list-group-item active"><i class="glyphicon glyphicon-user"></i> Faculty List</a>
+    				<a href="association.html" class="list-group-item"><i class="glyphicon glyphicon-tasks"></i> Association</a>
+    			</div>
+    		</div>
+
+    <div class="col-sm-6 col-md-3">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="https://i.postimg.cc/VNs6dtw4/profile2.jpg" alt="Team Image"/>
+            </div>
+            <div class="profile-content">
+                <h2 class="title">Dr.Velumani, M.C.A.,  P.hd.,
+                    <span>Head of the department</span>
+                </h2>
+                <ul class="social-link">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="https://i.postimg.cc/XYkqj8Rp/profile3.jpg" alt="Team Image"/>
+            </div>
+            <div class="profile-content">
+                <h2 class="title">M.K.Nageswaran MCA.,
+                    <span>Assistant Proffessor</span>
+                </h2>
+                <ul class="social-link">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="https://i.postimg.cc/g0M0R0kp/profile1.jpg" alt="Team Image"/>
+            </div>
+            <div class="profile-content">
+                <h2 class="title">Dr.U.Sridevi MCA.,
+                    <span>Assistant Proffessor</span>
+                </h2>
+                <ul class="social-link">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="https://i.postimg.cc/SsJxGpJM/profile4.jpg" alt="Team Image"/>
+            </div>
+            <div class="profile-content">
+                <h2 class="title">Yasodha MCA.,
+                    <span>Assistant Proffessor</span>
+                </h2>
+                <ul class="social-link">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="https://i.postimg.cc/SsJxGpJM/profile4.jpg" alt="Team Image"/>
+            </div>
+            <div class="profile-content">
+                <h2 class="title">Deepashri MCA.,
+                    <span>Assistant Proffessor</span>
+                </h2>
+                <ul class="social-link">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="https://i.postimg.cc/SsJxGpJM/profile4.jpg" alt="Team Image"/>
+            </div>
+            <div class="profile-content">
+                <h2 class="title">Kavitha MCA.,
+                    <span>Assistant Proffessor</span>
+                </h2>
+                <ul class="social-link">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <div class="profile-card">
+            <div class="profile-img">
+                <img src="https://i.postimg.cc/SsJxGpJM/profile4.jpg" alt="Team Image"/>
+            </div>
+            <div class="profile-content">
+                <h2 class="title">Amaira
+                    <span>Lab Assistant</span>
+                </h2>
+                <ul class="social-link">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div></div></section>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
